@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="./main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row align-items-center mb-4">
+            <div class="col-md-8 bg-secondary">
+                <h1 class="text-light">PROPUESTA EDUCATIVA</h1>
+            </div>
+            <div class="col-md-4 text-end">
+                <img src="./imagenes/logo Junior.png" alt="Logo" class="img-fluid">
+            </div>
+        </div>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/carrousel/1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/carrousel/2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/carrousel/3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+
+        <div class="row"> 
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="bg-info text-light p-3">
+                    <h1 class="h4">DESAFÍO</h1>
+                    <p>Insertos en la cuarta revolución industrial, la tecnología está presente en todos los ámbitos de la vida: aparecen la robótica, la biotecnología, la inteligencia artificial. Desaparecen profesiones y surgen nuevas. </p>
+                    <img src="./imagenes/desafio..jpg" alt="Desafío" class="img-fluid">
+                </div>
+            </div> 
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="bg-info text-light p-3">
+                    <h1 class="h4">SOLUCIÓN</h1>
+                    <p>Desde hace 100 años, promovemos una actitud emprendedora en millones de jóvenes para que se sientan protagonistas y emprendedores de sus propias vidas. </p>
+                    <img src="./imagenes/solucion.jpg" alt="Solución" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="bg-info text-light p-3">
+                    <h1 class="h4">IMPACTO</h1>
+                    <p>Trabajamos en cientos de escuelas cada año formando a miles de jóvenes para que estén mejor preparados para el futuro.</p>
+                    <img src="./imagenes/impacto.jpg" alt="Impacto" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- contenedor general para poner todas las noticias -->
+<div class="contenedor">
+    <!-- primera noticia -->
+    <div class="noticias">
+      <h1>Desafío de Innovación junto a Eramine: +70 jovenes salteñas desafiaron su creatividad.</h1>
+      <div id="contenido" >
+        <!-- este contenedor es el que quiero ocultar/mostrar -->
+        <p> El pasado 14 y 15 de agosto realizamos junto a Eramine un Desafío de innovación en Salta. Durante la jornada, 73 estudiantes mujeres de entre 16 y 17 años diseñaron soluciones innovadoras para la gestión eficiente de residuos a través de un modelo de negocio sostenible. 
+
+        </p>
+      </div>
+      <button onclick='muestra_oculta("contenido")' class="btn btn-primary" form="contenido" >+</button>
+    </div>
+
+    <!-- segunda noticia -->
+    <div class="noticias">
+      <h1>Socios en Cuyo: 101 jóvenes vivenciaron un día de su futura carrera. </h1>
+      <div id="contenido2">
+        <!-- este contenedor es el que quiero ocultar/mostrar -->
+        <p>Durante julio, se desarrollaron las jornadas presenciales del programa SOCIOS en Cuyo. Durante esta edición, 101 jóvenes del último año del secundario compartieron una jornada laboral con profesionales de la carrera de su interés.
+  </p>
+      </div>
+      <button onclick="muestra_oculta('contenido2')" class="btn btn-primary" form="contenido2" >+</button>
+    </div>
+
+    <!-- tercera noticia -->
+    <div class="noticias">
+      <h1>Estudiantes entre 14 y 18 años de todo el país participaron del proyecto educativo. </h1>
+      <div id="contenido3">
+        <!-- este contenedor es el que quiero ocultar/mostrar -->
+        <p>El programa se dictó en el Campus de JA y tenía una duración estimada de 4 semanas. Los chicos contaron con
+          ágil, dinámica y entretenida, y así desarrollan habilidades que les sirven para su futuro.</p>
+      </div>
+      <button onclick="muestra_oculta('contenido3')" class="btn btn-primary" form="contenido3">+</button>
+    </div>
+
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+
+</body>
+</html>

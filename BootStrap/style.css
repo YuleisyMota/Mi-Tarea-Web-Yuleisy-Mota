@@ -1,0 +1,26 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .noticias {
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+  }
+  .noticias h1 {
+    font-size: 21px;
+    color: rgb(4, 12, 71);
+    text-align: justify;
+  }
+  .noticias p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  button {
+    background-color: rgb(38, 3, 79);
+    color: white;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+  }

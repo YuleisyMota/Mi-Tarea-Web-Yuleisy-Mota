@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+<img src="./imagenes/logo Junior.png" alt="logo de junior">
+        </div>
+        <nav>
+            <ul>
+                <a href="https://junior.org.ar/"><li>HOME</li></a>
+                <a href="#nosotros"><li>NOSOTROS</li></a>
+                <a href="https://junior.org.ar/INSCRIPCIONES/"><li>INSCRIPCIONES</li></a>
+                <a href="https://junior.org.ar/NOVEDADES/"><li>NOVEDADES</li></a>
+                <a href="https://junior.org.ar/ALUMNO/"><li>ALUMNO</li></a>
+             </ul>
+        </nav>
+    </header>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/1.1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/2.2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/3.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+
+    <div class="presentacion">
+        <h1>QUIÉNES SOMOS</h1>
+        <P>Somos una de las ONG más grandes del mundo. A través del aprendizaje activo en educación financiera, formación para el trabajo y emprendimiento, preparamos e inspiramos a los jóvenes para que sean protagonistas de su futuro.</P>
+    </div>
+    <div class="contenedor">
+    <div class="caja"> 
+        <img src="./imagenes/desafio.jpg" alt="desafio de junior">
+        <h1>EL DESAFÍO</h1>  
+        <p>Insertos en la cuarta revolución industrial, la tecnología irrumpe en todos los ámbitos de la vida: aparecen la robótica, la biotecnología, la inteligencia artificial. Desaparecen profesiones y surgen nuevas.</p>
+    </div> 
+ <div class="caja">
+        <img src="./imagenes/solucion.jpg" alt="solucion de junior">
+        <h1>LA SOLUCIÓN</h1>
+        <p>Desde hace 100 años, promovemos una actitud emprendedora en millones de jóvenes para que se sientan protagonistas y emprendedores de sus propias vidas.</p>
+ </div>  
+    <div class="caja">
+        <img src="./imagenes/impacto.jpg" alt="impacto de junior">
+        <h1>IMPACTO</h1>
+        <p>Trabajamos en cientos de escuelas cada año formando a miles de jóvenes para que estén mejor preparados para el futuro.</p>
+    </div>
+ </div>
+ 
+ <div>
+
+
+ </div>
+ 
+ <!-- contenedor general para poner todas las noticias -->
+ <div class="contenedor">
+     <!-- primera noticia -->
+     <div class="noticias">
+       <h1>3.700 jóvenes aprendieron a programar.</h1>
+       <div id="contenido" >
+         <!-- este contenedor es el que quiero ocultar/mostrar -->
+         <p> En su cuarto año consecutivo, Yo puedo programar reunió 3.700 estudiantes de 86 escuelas de todo el país. La
+           creatividad y la autonomía digital. Unavez más se cunplió el alcanzó el objetivo propuesto todos los años.
+         </p>
+       </div>
+       <button onclick='muestra_oculta("contenido")' class="btn btn-primary" form="contenido" >+</button>
+     </div>
+ 
+     <!-- segunda noticia -->
+     <div class="noticias">
+       <h1>Más de 120 docentes se capacitaron en el programa Yo Puedo Porgramar. </h1>
+       <div id="contenido2">
+         <!-- este contenedor es el que quiero ocultar/mostrar -->
+         <p>“La oportunidad es enorme: desde cualquier lugar y con cualquier dispositivo podemos acceder a una vasta
+           de Microsoft Américas. </p>
+       </div>
+       <button onclick="muestra_oculta('contenido2')" class="btn btn-primary" form="contenido2" >+</button>
+     </div>
+ 
+     <!-- tercera noticia -->
+     <div class="noticias">
+       <h1>Estudiantes entre 14 y 18 años de todo el país participaron del proyecto educativo. </h1>
+       <div id="contenido3">
+         <!-- este contenedor es el que quiero ocultar/mostrar -->
+         <p>El programa se dictó en el Campus de JA y tenía una duración estimada de 4 semanas. Los chicos contaron con
+           ágil, dinámica y entretenida, y así desarrollan habilidades que les sirven para su futuro.</p>
+       </div>
+       <button onclick="muestra_oculta('contenido3')" class="btn btn-primary" form="contenido3">+</button>
+     </div>
+ 
+   </div>
+
+
+
+ <div id="nosotros">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30279.95692540232!2d-69.992448!3d18.438553600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sdo!4v1723918312109!5m2!1ses-419!2sdo" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CAvju4e-EPk?si=msgM8NIBW7Yb9YID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+
+ <footer>
+    <p>Conocé nuestra Política de privacidad | ©2022 Junior Achievement Argentina. Todos los derechos reservados.</p>
+ </footer>
+   
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+</body>
+
+
+</html>
